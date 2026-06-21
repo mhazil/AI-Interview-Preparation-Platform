@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Interview Prep</title>
+    <link rel="stylesheet"
+href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<h1>AI Interview Preparation</h1>
+
+<form action="/generate" method="POST" enctype="multipart/form-data">
+
+<label>Select Role:</label>
+
+<select name="role">
+    <option>Software Engineer</option>
+    <option>Data Analyst</option>
+</select>
+
+<br><br>
+<label>Upload Resume:</label>
+<input type="file" name="resume">
+<br><br>
+
+<button type="submit">
+Generate Questions
+</button>
+
+</form>
+
+</body>
+</html>
